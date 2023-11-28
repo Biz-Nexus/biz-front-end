@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async rewrites() {
-    return [
-      {
-        source: '/user/email/registration',
-        destination: 'http://124.223.105.57:8883/user/email/registration',
-      },
-    ]
-  },
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: '/user/email/registration',
+  //       destination: 'http://124.223.105.57:8883/user/email/registration',
+  //     },
+  //   ]
+  // },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
@@ -17,7 +17,7 @@ const nextConfig = {
     return config;
   },
   images: {
-    domains: ['i.imgs.ovh'],
+    domains: ['i.imgs.ovh', 'nftstorage.link', 's2.coinmarketcap.com'],
   },
 }
 
